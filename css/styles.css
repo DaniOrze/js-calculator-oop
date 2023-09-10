@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #71d8c2, #284279);
+  }
+
+#container {
+  max-width: 25em;
+}
+
+h1 {
+  color: #303030;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.calculator-container {
+  background-color: #ffffff;
+  width: 20em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;  
+  position: relative;
+  overflow: hidden;
+}
+
+.operation-display {
+  height: 6em;
+  padding: 1em 1.25em;
+  text-align: right;
+}
+
+.previous-operation {
+  font-size: 1.5em;
+}
+
+.current-operation {
+  font-size: 2.75em;
+}
+
+.buttons-display {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 1em;
+}
+
+.buttons-display > * {
+  padding: 1.5em 1.25em;
+  position: relative;
+  text-align: center;
+}
+
+button {
+  border: 0px;
+  border-radius: 0;
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  outline: none;
+  appearance: none;
+  text-align: left;
+}
+
+.operation {
+  background-color: rgb(223, 223, 223);
+}
+
+.number {
+  background-color: rgb(247, 247, 247);
+}
+
+.equal-btn {
+  grid-column: span 2;
+  background-color: #adadad;
+}
+
+
+.buttons-display > *:active::before{
+  background: #7e7e7e;
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.3;
+  position: absolute;
+}
