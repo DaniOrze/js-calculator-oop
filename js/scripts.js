@@ -83,6 +83,12 @@ class Calculator {
         this.updateCurrentDisplay();
     }
 
+    operationDEL() {
+        this.currentNumber = this.currentNumber.slice(0, -1);
+        this.updateCurrentDisplay();
+
+    }
+
     updatePreviousDisplay() {
         let displayText = this.previousNumber + (this.operator ? ` ${this.operator}` : "");
         if (displayText.length > 15) {
@@ -94,9 +100,6 @@ class Calculator {
     updateCurrentDisplay() {
         this.currentOperationText.innerText = this.currentNumber;
     }
-
-
-
 }
 
 const calculator = new Calculator(previousOperationText, currentOperationText);
