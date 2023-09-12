@@ -4,6 +4,8 @@
 ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
+[VIEW DEMO](https://daniorze.github.io/js-calculator-poo/)
+
 If you prefer to read in Brazilian Portuguese, please, click [here](./README-ptbr.md).
 
 This project showcases a functional calculator built in JavaScript, CSS3, and HTML5, utilizing Object-Oriented Programming (OOP) principles for its operations.
